@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.RegisterMenuController"
+            prefHeight="400.0" prefWidth="600.0">
+        <center>
+            <VBox alignment="CENTER" spacing="5">
+                <Label text="Create your account"/>
+                <TextField promptText="username" maxWidth="300" fx:id="username"/>
+                <PasswordField promptText="password" maxWidth="300" fx:id="password"/>
+                <PasswordField promptText="passwordCheck" maxWidth="300" fx:id="checkPassword"/>
+                <Button text="create" onMouseClicked="#createAccount"/>
+            </VBox>
+        </center>
+</BorderPane>
